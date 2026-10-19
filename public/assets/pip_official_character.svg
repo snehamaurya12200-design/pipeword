@@ -1,0 +1,326 @@
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+      <defs>
+        <!-- Background Radial Gradient -->
+        <radialGradient id="bgGradient" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="60%" stopColor="#fef3c7" stop-opacity="0.5" />
+          <stop offset="100%" stopColor="#fed7aa" stop-opacity="0.3" />
+        </radialGradient>
+
+        <!-- Ivory Skull Gradient -->
+        <linearGradient id="ivorySkull" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="60%" stopColor="#fffdfa" />
+          <stop offset="90%" stopColor="#fbf6ee" />
+          <stop offset="100%" stopColor="#f3e8dc" />
+        </linearGradient>
+
+        <!-- Pastel Cloud Gradient -->
+        <linearGradient id="cloudFill" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="65%" stopColor="#fff5f5" />
+          <stop offset="90%" stopColor="#fce7f3" />
+          <stop offset="100%" stopColor="#ede9fe" />
+        </linearGradient>
+
+        <!-- Onesie Pajamas Gradient -->
+        <linearGradient id="onesieFill" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="40%" stopColor="#fef2f8" />
+          <stop offset="85%" stopColor="#fce7f3" />
+          <stop offset="100%" stopColor="#fbcfe8" />
+        </linearGradient>
+
+        <!-- Nightcap Gradient -->
+        <linearGradient id="capFill" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#fef2f2" />
+          <stop offset="40%" stopColor="#fce7f3" />
+          <stop offset="85%" stopColor="#fbcfe8" />
+          <stop offset="100%" stopColor="#f4a6b8" />
+        </linearGradient>
+
+        <!-- Brass Lantern Gradient -->
+        <linearGradient id="brassFill" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#fef08a" />
+          <stop offset="50%" stopColor="#eab308" />
+          <stop offset="100%" stopColor="#ca8a04" />
+        </linearGradient>
+
+        <!-- Music Box Gradient -->
+        <linearGradient id="musicBoxFill" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#e0e7ff" />
+          <stop offset="60%" stopColor="#c7d2fe" />
+          <stop offset="100%" stopColor="#a5b4fc" />
+        </linearGradient>
+      </defs>
+
+      
+
+      <!-- MAIN PIP GROUP -->
+      <g transform="translate(0, 80)">
+        
+        <!-- ================= 1. FLUFFY DREAM CLOUD BASE ================= -->
+        <g id="cloud-base">
+          <!-- Soft under-cloud shadow base -->
+          <ellipse cx="250" cy="275" rx="160" ry="38" fill="#f3e0e2" />
+
+          <!-- Overlapping cloud puffs -->
+          <circle cx="140" cy="255" r="45" fill="url(#cloudFill)" stroke="#fce7f3" stroke-width="1.5" />
+          <circle cx="180" cy="265" r="48" fill="url(#cloudFill)" stroke="#fce7f3" stroke-width="1.5" />
+          <circle cx="115" cy="250" r="32" fill="url(#cloudFill)" stroke="#fce7f3" stroke-width="1.5" />
+          <circle cx="95" cy="245" r="22" fill="url(#cloudFill)" stroke="#fce7f3" stroke-width="1.5" />
+
+          <circle cx="360" cy="255" r="45" fill="url(#cloudFill)" stroke="#fce7f3" stroke-width="1.5" />
+          <circle cx="320" cy="265" r="48" fill="url(#cloudFill)" stroke="#fce7f3" stroke-width="1.5" />
+          <circle cx="385" cy="250" r="32" fill="url(#cloudFill)" stroke="#fce7f3" stroke-width="1.5" />
+          <circle cx="405" cy="245" r="22" fill="url(#cloudFill)" stroke="#fce7f3" stroke-width="1.5" />
+
+          <!-- Center front puffy body of cloud -->
+          <circle cx="215" cy="260" r="50" fill="url(#cloudFill)" />
+          <circle cx="285" cy="260" r="50" fill="url(#cloudFill)" />
+          <circle cx="250" cy="265" r="52" fill="url(#cloudFill)" />
+          <ellipse cx="250" cy="255" rx="150" ry="36" fill="url(#cloudFill)" />
+
+          <!-- Top rim cloud highlight -->
+          <path d="M 125 235 Q 185 220 250 222 Q 315 220 375 235" stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.8" />
+
+          <!-- Cloud Script Text: "♥ Pip ♥" -->
+          <g id="cloud-text" transform="translate(250, 268)">
+            <!-- Heart left -->
+            <path d="M -48 -2 C -51 -7 -57 -7 -60 -2 C -63 4 -48 11 -48 11 C -48 11 -33 4 -36 -2 C -39 -7 -45 -7 -48 -2 Z" fill="#f472b6" />
+            <!-- Script text Pip -->
+            <text x="0" y="7" text-anchor="middle" font-family="'Brush Script MT', 'Snell Roundhand', 'Comic Sans MS', cursive, sans-serif" font-size="28" font-weight="bold" fill="#f472b6" letter-spacing="1.5">
+              Pip
+            </text>
+            <!-- Heart right -->
+            <path d="M 48 -2 C 45 -7 39 -7 36 -2 C 33 4 48 11 48 11 C 48 11 63 4 60 -2 C 57 -7 51 -7 48 -2 Z" fill="#f472b6" />
+          </g>
+        </g>
+
+        <!-- ================= 2. PIP BODY & LEGS (CROSS-LEGGED) ================= -->
+        <g id="pip-lower-body">
+          <!-- Onesie Pajamas Body -->
+          <ellipse cx="250" cy="180" rx="65" ry="48" fill="url(#onesieFill)" stroke="#fbcfe8" stroke-width="1.8" />
+
+          <!-- Folded Legs -->
+          <!-- Left Leg & Bootie (Viewer's left) -->
+          <ellipse cx="195" cy="205" rx="36" ry="24" fill="url(#onesieFill)" transform="rotate(-15 195 205)" stroke="#fbcfe8" stroke-width="1.8" />
+          <ellipse cx="170" cy="216" rx="20" ry="16" fill="#c084fc" stroke="#a855f7" stroke-width="1.5" transform="rotate(-10 170 216)" />
+          <ellipse cx="170" cy="216" rx="14" ry="10" fill="#e9d5ff" transform="rotate(-10 170 216)" />
+
+          <!-- Right Leg & Bootie (Viewer's right) -->
+          <ellipse cx="305" cy="205" rx="36" ry="24" fill="url(#onesieFill)" transform="rotate(15 305 205)" stroke="#fbcfe8" stroke-width="1.8" />
+          <ellipse cx="330" cy="216" rx="20" ry="16" fill="#c084fc" stroke="#a855f7" stroke-width="1.5" transform="rotate(10 330 216)" />
+          <ellipse cx="330" cy="216" rx="14" ry="10" fill="#e9d5ff" transform="rotate(10 330 216)" />
+
+          <!-- Front Seam & Buttons -->
+          <path d="M 250 148 L 250 205" stroke="#f472b6" stroke-width="1.8" stroke-linecap="round" />
+          <circle cx="250" cy="160" r="2.5" fill="#f472b6" />
+          <circle cx="250" cy="175" r="2.5" fill="#f472b6" />
+          <circle cx="250" cy="190" r="2.5" fill="#f472b6" />
+
+          <!-- Tiny Hearts on Onesie -->
+          <g fill="#f472b6" opacity="0.4">
+            <path d="M 230 166 C 228 163 224 163 222 166 C 220 169 230 174 230 174 C 230 174 240 169 238 166 C 236 163 232 163 230 166 Z" />
+            <path d="M 270 174 C 268 171 264 171 262 174 C 260 177 270 182 270 182 C 270 182 280 177 278 174 C 276 171 272 171 270 174 Z" />
+            <path d="M 218 190 C 216 187 212 187 210 190 C 208 193 218 198 218 198 C 218 198 228 193 226 190 C 224 187 220 187 218 190 Z" />
+            <path d="M 282 195 C 280 192 276 192 274 195 C 272 198 282 203 282 203 C 282 203 292 198 290 195 C 288 192 284 192 282 195 Z" />
+          </g>
+        </g>
+
+        <!-- ================= 3. PIP ARMS & HELD OBJECTS ================= -->
+        <!-- LEFT HAND (Viewer's left): HOLDING THE DREAM LANTERN -->
+        <g id="hand-lantern">
+          <!-- Upper Arm -->
+          <ellipse cx="190" cy="155" rx="18" ry="26" fill="url(#onesieFill)" transform="rotate(25 190 155)" stroke="#fbcfe8" stroke-width="1.8" />
+          <!-- Forearm -->
+          <ellipse cx="178" cy="180" rx="14" ry="20" fill="url(#onesieFill)" transform="rotate(-15 178 180)" stroke="#fbcfe8" stroke-width="1.8" />
+          <!-- Cute baby bone hand holding ring -->
+          <circle cx="178" cy="195" r="9" fill="#fffdfa" stroke="#d5c7b8" stroke-width="1.2" />
+
+          <!-- DREAM LANTERN -->
+          <g id="dream-lantern" transform="translate(145, 175)">
+            <!-- Ambient Golden Glow -->
+            <circle cx="32" cy="48" r="38" fill="#fef08a" opacity="0.3" />
+
+            <!-- Golden Dream Rays -->
+            <g stroke="#fde047" stroke-width="2" stroke-linecap="round" opacity="0.75">
+              <line x1="32" y1="8" x2="32" y2="2" />
+              <line x1="32" y1="88" x2="32" y2="94" />
+              <line x1="-6" y1="48" x2="-12" y2="48" />
+              <line x1="70" y1="48" x2="76" y2="48" />
+              <line x1="6" y1="22" x2="1" y2="17" />
+              <line x1="58" y1="74" x2="63" y2="79" />
+              <line x1="6" y1="74" x2="1" y2="79" />
+              <line x1="58" y1="22" x2="63" y2="17" />
+            </g>
+
+            <!-- Lantern Hanging Brass Ring -->
+            <circle cx="32" cy="18" r="10" stroke="url(#brassFill)" stroke-width="3.5" fill="none" />
+
+            <!-- Lantern Domed Top Cap -->
+            <path d="M 12 34 Q 32 24 52 34 L 54 38 L 10 38 Z" fill="url(#brassFill)" stroke="#854d0e" stroke-width="1.2" />
+            <!-- Star Vent Cutout on Cap -->
+            <polygon points="32,27 34,31 38,32 35,35 36,39 32,37 28,39 29,35 26,32 30,31" fill="#fffbeb" />
+
+            <!-- Lantern Glass Chamber -->
+            <rect x="14" y="38" width="36" height="30" rx="3" fill="#fffbeb" stroke="url(#brassFill)" stroke-width="3" />
+            <!-- Glowing Inner Candle / Flame -->
+            <circle cx="32" cy="52" r="12" fill="#fde047" />
+            <circle cx="32" cy="52" r="7" fill="#ffffff" />
+            <polygon points="32,49 33,51 35,52 33,53 32,55 31,53 29,52 31,51" fill="#ffffff" />
+
+            <!-- Vertical Frame Struts -->
+            <line x1="26" y1="38" x2="26" y2="68" stroke="#ca8a04" stroke-width="1.5" />
+            <line x1="38" y1="38" x2="38" y2="68" stroke="#ca8a04" stroke-width="1.5" />
+
+            <!-- Lantern Base -->
+            <rect x="11" y="68" width="42" height="6" rx="2" fill="url(#brassFill)" stroke="#854d0e" stroke-width="1" />
+            <rect x="16" y="74" width="32" height="4" rx="2" fill="url(#brassFill)" />
+          </g>
+        </g>
+
+        <!-- RIGHT HAND (Viewer's right): HOLDING THE LULLABY MUSIC BOX WITH UNICORN -->
+        <g id="hand-music-box">
+          <!-- Upper Arm -->
+          <ellipse cx="310" cy="155" rx="18" ry="26" fill="url(#onesieFill)" transform="rotate(-25 310 155)" stroke="#fbcfe8" stroke-width="1.8" />
+          <!-- Forearm -->
+          <ellipse cx="318" cy="178" rx="14" ry="20" fill="url(#onesieFill)" transform="rotate(20 318 178)" stroke="#fbcfe8" stroke-width="1.8" />
+          <!-- Baby bone hand -->
+          <circle cx="328" cy="195" r="9" fill="#fffdfa" stroke="#d5c7b8" stroke-width="1.2" />
+
+          <!-- LULLABY MUSIC BOX -->
+          <g id="lullaby-box" transform="translate(305, 170)">
+            <!-- Music Box Cylinder Body -->
+            <ellipse cx="32" cy="28" rx="26" ry="7" fill="#fbcfe8" stroke="#f472b6" stroke-width="1.5" />
+            <path d="M 6 28 L 6 52 C 6 58 58 58 58 52 L 58 28 Z" fill="url(#musicBoxFill)" stroke="#818cf8" stroke-width="1.8" />
+            <ellipse cx="32" cy="52" rx="26" ry="7" fill="#818cf8" opacity="0.6" />
+            <ellipse cx="32" cy="28" rx="24" ry="6" fill="#fef08a" />
+
+            <!-- Gold Stars on Music Box -->
+            <polygon points="18,36 19,39 22,40 19,41 18,44 17,41 14,40 17,39" fill="#fde047" stroke="#ca8a04" stroke-width="0.8" />
+            <polygon points="32,38 33,41 36,42 33,43 32,46 31,43 28,42 31,41" fill="#fde047" stroke="#ca8a04" stroke-width="0.8" />
+            <polygon points="46,36 47,39 50,40 47,41 46,44 45,41 42,40 45,39" fill="#fde047" stroke="#ca8a04" stroke-width="0.8" />
+
+            <!-- Winding Crank Key on Right Side -->
+            <path d="M 58 42 L 68 42" stroke="#ca8a04" stroke-width="3" stroke-linecap="round" />
+            <circle cx="68" cy="42" r="4.5" fill="#fde047" stroke="#ca8a04" stroke-width="1.5" />
+
+            <!-- MINIATURE UNICORN FIGURINE ON TOP -->
+            <g id="mini-unicorn" transform="translate(18, 2)">
+              <!-- Body -->
+              <ellipse cx="14" cy="18" rx="10" ry="7" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.2" />
+              <!-- Legs with gold hooves -->
+              <rect x="7" y="22" width="2.5" height="7" rx="1" fill="#ffffff" />
+              <rect x="11" y="22" width="2.5" height="7" rx="1" fill="#ffffff" />
+              <rect x="16" y="22" width="2.5" height="7" rx="1" fill="#ffffff" />
+              <rect x="20" y="22" width="2.5" height="7" rx="1" fill="#ffffff" />
+              <rect x="7" y="27" width="2.5" height="2" fill="#fde047" />
+              <rect x="11" y="27" width="2.5" height="2" fill="#fde047" />
+              <rect x="16" y="27" width="2.5" height="2" fill="#fde047" />
+              <rect x="20" y="27" width="2.5" height="2" fill="#fde047" />
+              <!-- Neck & Head -->
+              <path d="M 19 18 L 24 10 L 28 11 L 27 16 Z" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.2" />
+              <ellipse cx="26" cy="11" rx="5" ry="4" fill="#ffffff" />
+              <ellipse cx="29" cy="11" rx="2" ry="2" fill="#fbcfe8" />
+              <!-- Eye & Ear -->
+              <circle cx="26" cy="10" r="1.2" fill="#4338ca" />
+              <polygon points="24,8 25,5 26,8" fill="#fbcfe8" />
+              <!-- Golden Horn -->
+              <polygon points="26,7 28,1 29,7" fill="#fde047" stroke="#ca8a04" stroke-width="0.6" />
+              <!-- Pink Mane & Tail -->
+              <path d="M 22 8 Q 20 13 22 18" stroke="#f472b6" stroke-width="2.5" stroke-linecap="round" fill="none" />
+              <path d="M 6 18 Q 2 20 4 25" stroke="#f472b6" stroke-width="2.2" stroke-linecap="round" fill="none" />
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= 4. PIP'S ADORABLE SKULL HEAD ================= -->
+        <g id="pip-head">
+          <!-- Skull Base Shape -->
+          <ellipse cx="250" cy="105" rx="64" ry="60" fill="url(#ivorySkull)" stroke="#e8ded2" stroke-width="2" />
+          <!-- Chubby Cheeks / Jaw Contour -->
+          <path d="M 195 110 C 190 138 215 152 250 152 C 285 152 310 138 305 110 Z" fill="url(#ivorySkull)" stroke="#e8ded2" stroke-width="2" />
+
+          <!-- Cranial Suture on Forehead -->
+          <path d="M 250 48 Q 248 55 251 62 Q 249 68 250 74" stroke="#d5c7b8" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6" />
+
+          <!-- Big Round Dark Eye Sockets -->
+          <ellipse cx="222" cy="112" rx="19" ry="22" fill="#181124" />
+          <ellipse cx="278" cy="112" rx="19" ry="22" fill="#181124" />
+
+          <!-- Warm Golden Candle/Dream Light Points in Eyes -->
+          <circle cx="226" cy="114" r="6" fill="#fde047" opacity="0.4" />
+          <circle cx="226" cy="114" r="3.2" fill="#fef08a" />
+          <circle cx="226" cy="114" r="1.5" fill="#ffffff" />
+          <path d="M 226 109 L 226 119 M 221 114 L 231 114" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.9" />
+
+          <circle cx="274" cy="114" r="6" fill="#fde047" opacity="0.4" />
+          <circle cx="274" cy="114" r="3.2" fill="#fef08a" />
+          <circle cx="274" cy="114" r="1.5" fill="#ffffff" />
+          <path d="M 274 109 L 274 119 M 269 114 L 279 114" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.9" />
+
+          <!-- Inverted Triangle Nose Cavity -->
+          <path d="M 248 128 L 252 128 L 250 132 Z" fill="#2d2235" />
+          <circle cx="249" cy="129" r="1.2" fill="#1f1625" />
+          <circle cx="251" cy="129" r="1.2" fill="#1f1625" />
+
+          <!-- Sweet Curved Smiling Mouth -->
+          <path d="M 241 138 Q 250 144 259 138" stroke="#3b2b45" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+          <!-- Rosy Blushing Cheeks -->
+          <ellipse cx="204" cy="132" rx="16" ry="10" fill="#fca5a5" opacity="0.65" />
+          <ellipse cx="296" cy="132" rx="16" ry="10" fill="#fca5a5" opacity="0.65" />
+        </g>
+
+        <!-- ================= 5. SLEEPY NIGHTCAP WITH BOW & POM-POM ================= -->
+        <g id="pip-nightcap">
+          <!-- Main Nightcap Body Drooping Left -->
+          <path d="M 194 85 
+                   C 180 50 200 15 250 15 
+                   C 295 15 315 45 308 85 
+                   C 290 80 270 78 250 78 
+                   C 225 78 208 81 194 85 Z" 
+                fill="url(#capFill)" stroke="#f4a6b8" stroke-width="1.8" />
+
+          <!-- Fold of Cap Drooping down left -->
+          <path d="M 215 30 
+                   C 170 30 145 65 140 100 
+                   C 135 125 150 135 155 120 
+                   C 160 100 180 60 215 30 Z" 
+                fill="url(#capFill)" stroke="#f4a6b8" stroke-width="1.8" />
+
+          <!-- Fluffy White Pom-Pom -->
+          <circle cx="140" cy="115" r="16" fill="#ffffff" stroke="#fbcfe8" stroke-width="1.5" />
+          <circle cx="137" cy="112" r="12" fill="#fff7ed" />
+          <circle cx="143" cy="117" r="10" fill="#ffffff" />
+
+          <!-- Cap Brim Band around forehead -->
+          <path d="M 192 84 C 220 74 280 74 308 84 C 304 94 280 90 250 90 C 220 90 196 94 192 84 Z" 
+                fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1.8" />
+
+          <!-- Tiny Stars & Dots on Nightcap -->
+          <g fill="#fde047" opacity="0.85">
+            <polygon points="245,35 246,38 249,39 246,40 245,43 244,40 241,39 244,38" />
+            <polygon points="275,45 276,48 279,49 276,50 275,53 274,50 271,49 274,48" />
+            <polygon points="175,65 176,68 179,69 176,70 175,73 174,70 171,69 174,68" />
+            <circle cx="225" cy="45" r="2" fill="#ffffff" />
+            <circle cx="260" cy="30" r="2" fill="#ffffff" />
+            <circle cx="290" cy="60" r="2" fill="#ffffff" />
+            <circle cx="160" cy="85" r="2" fill="#ffffff" />
+          </g>
+
+          <!-- BIG PRETTY PASTEL PINK BOW ON FRONT OF CAP -->
+          <g id="cap-bow" transform="translate(205, 80)">
+            <path d="M 0 0 C -18 -15 -25 5 -4 5 Z" fill="#f472b6" stroke="#db2777" stroke-width="1.5" />
+            <path d="M 0 0 C 18 -15 25 5 4 5 Z" fill="#f472b6" stroke="#db2777" stroke-width="1.5" />
+            <ellipse cx="0" cy="0" rx="5.5" ry="4.5" fill="#fbcfe8" stroke="#db2777" stroke-width="1.5" />
+            <path d="M -2 2 Q -8 14 -12 18 L -6 18 Q -2 12 0 4 Z" fill="#f472b6" />
+            <path d="M 2 2 Q 8 14 12 18 L 6 18 Q 2 12 0 4 Z" fill="#f472b6" />
+          </g>
+        </g>
+
+      </g>
+    </svg>
+  

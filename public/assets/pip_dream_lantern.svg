@@ -1,0 +1,64 @@
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+      <defs>
+        <linearGradient id="brassGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#fef08a" />
+          <stop offset="45%" stopColor="#eab308" />
+          <stop offset="85%" stopColor="#ca8a04" />
+          <stop offset="100%" stopColor="#854d0e" />
+        </linearGradient>
+        <radialGradient id="lightGradL" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="40%" stopColor="#fef08a" />
+          <stop offset="75%" stopColor="#f59e0b" />
+          <stop offset="100%" stopColor="#d97706" />
+        </radialGradient>
+        <filter id="glowL" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="6" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      <!-- Background glow -->
+      <circle cx="100" cy="105" r="75" fill="url(#lightGradL)" opacity="0.35" filter="url(#glowL)" />
+
+      <!-- Radiating golden light rays -->
+      <g stroke="#fde047" stroke-width="2.5" stroke-linecap="round" opacity="0.75">
+        <line x1="100" y1="20" x2="100" y2="8" />
+        <line x1="100" y1="180" x2="100" y2="192" />
+        <line x1="20" y1="105" x2="8" y2="105" />
+        <line x1="180" y1="105" x2="192" y2="105" />
+        <line x1="45" y1="50" x2="35" y2="40" />
+        <line x1="155" y1="160" x2="165" y2="170" />
+        <line x1="45" y1="160" x2="35" y2="170" />
+        <line x1="155" y1="50" x2="165" y2="40" />
+      </g>
+
+      <!-- Hanging ring -->
+      <circle cx="100" cy="38" r="18" stroke="url(#brassGradL)" stroke-width="6" fill="none" />
+
+      <!-- Top domed cap -->
+      <path d="M 55 72 Q 100 50 145 72 L 150 82 L 50 82 Z" fill="url(#brassGradL)" stroke="#713f12" stroke-width="2" />
+      <!-- Star vent cutout -->
+      <polygon points="100,58 103,64 110,66 105,71 106,78 100,74 94,78 95,71 90,66 97,64" fill="#fffbeb" />
+
+      <!-- Glass chamber -->
+      <rect x="58" y="82" width="84" height="65" rx="6" fill="#fffbeb" stroke="url(#brassGradL)" stroke-width="5" />
+
+      <!-- Inside glowing light / flame -->
+      <circle cx="100" cy="112" r="26" fill="url(#lightGradL)" filter="url(#glowL)" />
+      <circle cx="100" cy="112" r="14" fill="#ffffff" />
+      <polygon points="100,105 102,110 107,112 102,114 100,119 98,114 93,112 98,110" fill="#ffffff" />
+
+      <!-- Vertical glass struts -->
+      <line x1="86" y1="82" x2="86" y2="147" stroke="#ca8a04" stroke-width="2.5" />
+      <line x1="114" y1="82" x2="114" y2="147" stroke="#ca8a04" stroke-width="2.5" />
+
+      <!-- Base -->
+      <rect x="50" y="147" width="100" height="14" rx="4" fill="url(#brassGradL)" stroke="#713f12" stroke-width="2" />
+      <rect x="62" y="161" width="76" height="10" rx="3" fill="url(#brassGradL)" />
+    </svg>
+  

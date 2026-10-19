@@ -1,0 +1,79 @@
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+      <defs>
+        <linearGradient id="boxGradM" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#e0e7ff" />
+          <stop offset="50%" stopColor="#c7d2fe" />
+          <stop offset="100%" stopColor="#a5b4fc" />
+        </linearGradient>
+        <linearGradient id="brassM" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#fef08a" />
+          <stop offset="60%" stopColor="#eab308" />
+          <stop offset="100%" stopColor="#ca8a04" />
+        </linearGradient>
+      </defs>
+
+      <!-- Ambient musical sparkles -->
+      <g fill="#fde047" opacity="0.9">
+        <polygon points="35,40 37,45 42,46 37,47 35,52 33,47 28,46 33,45" />
+        <polygon points="165,50 167,54 172,55 167,56 165,60 163,56 158,55 163,54" />
+        <circle cx="150" cy="30" r="3" fill="#f472b6" />
+        <circle cx="45" cy="80" r="3" fill="#c084fc" />
+      </g>
+
+      <!-- MINIATURE UNICORN FIGURINE ON TOP -->
+      <g id="unicorn" transform="translate(68, 25)">
+        <!-- Body -->
+        <ellipse cx="32" cy="40" rx="22" ry="15" fill="#ffffff" stroke="#e0e7ff" stroke-width="2" />
+        <!-- Legs -->
+        <rect x="18" y="48" width="5" height="18" rx="2" fill="#ffffff" />
+        <rect x="27" y="48" width="5" height="18" rx="2" fill="#ffffff" />
+        <rect x="37" y="48" width="5" height="18" rx="2" fill="#ffffff" />
+        <rect x="46" y="48" width="5" height="18" rx="2" fill="#ffffff" />
+        <!-- Golden Hooves -->
+        <rect x="18" y="62" width="5" height="4" fill="#fde047" />
+        <rect x="27" y="62" width="5" height="4" fill="#fde047" />
+        <rect x="37" y="62" width="5" height="4" fill="#fde047" />
+        <rect x="46" y="62" width="5" height="4" fill="#fde047" />
+
+        <!-- Neck & Head -->
+        <path d="M 44 40 L 54 22 L 64 24 L 62 36 Z" fill="#ffffff" stroke="#e0e7ff" stroke-width="2" />
+        <ellipse cx="60" cy="24" rx="10" ry="8" fill="#ffffff" />
+        <ellipse cx="66" cy="24" rx="4" ry="4" fill="#fbcfe8" />
+        <!-- Cute Eye -->
+        <circle cx="60" cy="22" r="2.2" fill="#4338ca" />
+        <circle cx="61" cy="21" r="0.8" fill="#ffffff" />
+        <!-- Cute Ears -->
+        <polygon points="55,18 57,11 60,18" fill="#fbcfe8" />
+        <!-- Golden Magical Spiral Horn -->
+        <polygon points="59,16 64,2 67,16" fill="url(#brassM)" stroke="#ca8a04" stroke-width="1" />
+
+        <!-- Pink Mane & Tail -->
+        <path d="M 50 18 Q 45 28 48 38" stroke="#f472b6" stroke-width="5" stroke-linecap="round" fill="none" />
+        <path d="M 16 38 Q 8 42 12 52" stroke="#f472b6" stroke-width="4.5" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- Music Box Drum Cylinder Body -->
+      <g id="drum">
+        <!-- Top Lid Ellipse -->
+        <ellipse cx="100" cy="98" rx="60" ry="16" fill="#fbcfe8" stroke="#f472b6" stroke-width="3" />
+        <!-- Side Walls -->
+        <path d="M 40 98 L 40 150 C 40 166 160 166 160 150 L 160 98 Z" fill="url(#boxGradM)" stroke="#818cf8" stroke-width="3" />
+        <ellipse cx="100" cy="150" rx="60" ry="16" fill="#818cf8" opacity="0.5" />
+        <ellipse cx="100" cy="98" rx="55" ry="14" fill="#fef08a" opacity="0.9" />
+
+        <!-- Gold Star Inlays on Front of Drum -->
+        <polygon points="68,118 70,125 77,126 71,130 73,137 68,133 63,137 65,130 59,126 66,125" fill="#fde047" stroke="#ca8a04" stroke-width="1" />
+        <polygon points="100,120 102,127 109,128 103,132 105,139 100,135 95,139 97,132 91,128 98,127" fill="#fde047" stroke="#ca8a04" stroke-width="1" />
+        <polygon points="132,118 134,125 141,126 135,130 137,137 132,133 127,137 129,130 123,126 130,125" fill="#fde047" stroke="#ca8a04" stroke-width="1" />
+
+        <!-- Bottom rim -->
+        <ellipse cx="100" cy="152" rx="62" ry="16" fill="none" stroke="url(#brassM)" stroke-width="4" />
+
+        <!-- Winding Crank Key on Right Side -->
+        <path d="M 160 128 L 180 128" stroke="#ca8a04" stroke-width="5" stroke-linecap="round" />
+        <circle cx="180" cy="128" r="9" fill="#fde047" stroke="#ca8a04" stroke-width="3" />
+        <path d="M 180 119 L 180 137" stroke="#ca8a04" stroke-width="2.5" />
+      </g>
+    </svg>
+  

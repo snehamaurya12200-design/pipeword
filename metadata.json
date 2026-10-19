@@ -1,0 +1,7 @@
+{
+  "name": "PIP.EXE — The Midnight Internet",
+  "description": "An interactive 2000s desktop OS portfolio belonging to Pip, Junior Dream Engineer at the Midnight Nursery. Built for the haX.baby Baby's First Website hackathon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
